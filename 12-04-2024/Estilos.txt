@@ -1,0 +1,23 @@
+
+
+1. Estilo en linea.
+2. Estilo general de la página.
+3. Estilo externo.
+
+	<style type="text/css">
+	p{color:#FF5534;
+	font-family:"Arial";
+	font-size:18px;}
+	</style>
+
+Consejos:
+
+<p> Este texto es normal </p>
+<p><b>Este texto es en negrita </b></p>
+<p><i> cursiva 
+<p><u> - Subrayado
+<p><del> etiqueta
+
+
+Referencia texto falso
+loremipsum.io
