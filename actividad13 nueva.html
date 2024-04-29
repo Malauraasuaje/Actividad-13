@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Actividad 13</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body style="
+	background-image:  radial-gradient(#faf9f8 0.5px, transparent 0.5px), radial-gradient(#F8BAF5 0.8px, #fffae0 0.8px);
+	font-family: Arial, Helvetica, sans-serif;
+	background-size: 20px 20px;
+	background-position: 0 0,10px 10px;
+	background-color: #fffdf1;
+	margin: 0; 
+	padding: 50px;">
+	
+<fieldset>
+	<legend style="color:#7F36E9; text-align: center;"><b>Importando multimeda</b> </legend>
+		<ul>
+			<a href="#inicio" id="inicio" style="color:#7F36E9">
+				<li>Inicio🌼</li>
+			</a>
+			<a href="#video" style="color:#7F36E9">
+				<li>Vídeo🎥</li>
+			</a>
+			<a href="#audio" style="color:#7F36E9">
+				<li>Audio🎶</li>
+			</a>
+			<a href="#imagen" style="color:#7F36E9">
+				<li>Imagen🖼</li>
+			</a>
+			<a href="#mapa" style="color:#7F36E9">
+				<li>Mapas🌏</li>
+			</a>
+			<a href="#fin" style="color:#7F36E9">
+				<h4>Final de página</h4>
+			</a>
+		</ul>
+</fieldset >
+	<br>
+<fieldset>
+	<legend style="color:#7F36E9; text-align: center; font-weight: bold; font-size: 20px;">Vídeos en HTML</legend>
+		<p style="color:#511562; "><b>Estructura:</b></p>
+			<pre style="color:#511562">
+			&lt;video width="640" height="360" controls>
+		&lt;source src="img/158349-816637197_tiny.mp4" type="video/mp4">   
+          Tu navegador no admite el elemento de video.
+			&lt;/video></pre>
+
+		<h3 style="color:#B4B7F7; 
+		text-align: center;">Importando vídeo desde el archivo</h3>
+		<video style="border-radius: 20px; margin-left: 60px;" width=90% controls>
+			<source src="multi/video1.mp4" type="video/mp4">
+			Tu navegador no soporta vídeo
+		</video>
+		<br>
+		<h3 id="video" style="color:#B4B7F7; text-align: center;">Importando vídeo desde biblioteca web</h3>
+		<video width=90% controls style="border-radius: 20px; margin-left: 60px;">
+			<source src="https://cdn.pixabay.com/video/2022/12/11/142579-780232342_large.mp4" type="video/mp4">
+			Tu navegador no soporta vídeo
+		</video>
+		<br>
+		<h3 style="color:#B4B7F7; text-align: center;">Importando vídeo desde youtube</h3>
+		<iframe style="border-radius: 60px; margin-left: 60px;" width="630" height="386" src="https://www.youtube.com/embed/6cnFl9aHD5Y"
+			title="JAVASCRIPT Desde Cero: Primeros Pasos en una hora" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		<br>
+		<h3 style="color:#B4B7F7; 
+		text-align: center;">Importando vídeo con imagen detenida</h3>
+		<video style="border-radius:60px; margin-left:60px;" 
+		width="30%" controls poster="multi/logo.jpg">
+			<source src="https://cdn.pixabay.com/video/2023/10/01/183136-870151786_large.mp4" type="video/mp4">
+		</video>
+</fieldset>
+<fieldset style="margin-top: 50px; ">
+		<legend id="audio" style="color:#7F36E9; 
+		text-align: center; font-weight: bold; 
+		font-size: 20px;">Audio en HTML</legend>
+		<p style="color:#511562"><b>Estructura:</b></p>
+		<pre style="color:#511562"> &lt;audio controls>
+         &lt;source src="audio.mp3" type="audio/mpeg">
+           Tu navegador no admite el elemento de audio.
+            &lt;/audio></pre>
+
+		<h3 style="color:#B4B7F7; text-align: center;">Insertando audio desde el archivo</h3>
+		<audio controls style="margin-left:40%">
+			<source src="multi/better.mp3" type="audio/mpeg" style="text-align: center;">
+			Tu navegador no soporta audio
+		</audio>
+
+		<h3 style="color:#B4B7F7; text-align: center;">Insertar audio y que se reproduzca automaticamente: :&lt;autoplay loop></h3>
+		<audio autoplay loop style="text-align: center;">
+			<source src="multi/better.mp3" type="audio/mpeg">
+			Tu navegador no soporta audio
+		</audio>
+
+		<h3 style="color:#B4B7F7; text-align: center;">Insertando lista de audio desde Spotify</h3>
+		<iframe style="border-radius:12px"
+			src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWKeNBqaIy5U?utm_source=generator" width="100%"
+			height="352" frameBorder="0" allowfullscreen=""
+			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</fieldset>
+<br>
+<fieldset>
+		<legend id="imagen" style="color:#7F36E9; text-align: center; font-weight: bold; font-size: 20px;">Imagen en HTML</legend>
+		<h4 style="color:#511562">Para agregar un pie de foto a una imagen en HTML, no hay una etiqueta específica, pero
+			generalmente se utiliza un enfoque semántico y accesible. Una forma común de hacerlo es envolver la imagen y
+			el pie de foto dentro de un elemento contenedor, como un &lt;figure>, y luego utilizar un elemento de texto,
+			como &lt;figcaption>, para el pie de foto.</h4>
+		<p style="color:#511562;"><b>Estructura:</b></p>
+		<pre
+			style="color:#511562"> &lt;img src="imagen.jpg" alt="Descripción de la imagen" title="Título de la imagen"></pre>
+
+		<h3 style="color:#B4B7F7; text-align: center;">Insertando imagen desde archivo</h3>
+		<img src="multi/diseño.jpg" alt="diseño rosa" title="diseño de la empresa" width="40%" style="margin-left:30%;" >
+		<h3 style="color:#B4B7F7; text-align: center;">Insertando imagen desde la biblioteca web</h3>
+		<img src="https://cdn.pixabay.com/photo/2014/04/05/11/40/paintbrush-316698_1280.jpg" width="50%" style="margin-left:25%;">
+		<h3 style="color:#B4B7F7; text-align: center;"> Insertando imagen con pie de foto</h3>
+		<figure>
+			<img src="multi/logo.jpg" style="border-radius: 50%;" alt="logo empresa" title="logo de la empresa" width="30%">
+			<figcaption style="color:#B4B7F7;"><b>Este es el logo de la empresa</b></figcaption>
+		</figure>
+		<p style="color:#511562"><b>Estructura:</b></p>
+		<pre style="color:#511562">
+            &lt;figure>
+                &lt;img src="imagen.jpg" alt="Descripción de la imagen">
+                &lt;figcaption>Pie de foto: Descripción adicional de la imagen.&lt;/figcaption>
+            &lt;/figure></pre>
+</fieldset>
+<fieldset style="margin-top: 50px;">
+		<legend id="mapa" style="color:#7F36E9; text-align: center; font-weight: bold;">Mapas en HTML</legend>
+		<p style="color:#511562"><b>Sintaxis de la etiqueta &lt;iframe>:</b></p>
+		<pre style="color:#511562">
+	&lt;iframe src="URL_de_la_pagina_externa" 
+		width="ancho" height="alto" frameborder="0" 
+			scrolling="auto"></iframe></pre>
+		<h3 style="color:#B4B7F7">Insertando mapa en HTML</h3>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d97211.75369540171!2d-3.8032633690187456!3d40.411790352606765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d40.4118196!2d-3.7208625!4m5!1s0xd4227df83cd99f9%3A0xac4bd87e3884fce7!2sC.%20de%20Moreno%20Nieto%2C%2019%2C%2028005%20Madrid%2C%20Spain!3m2!1d40.4118196!2d-3.7208625!5e0!3m2!1ses-419!2ses!4v1714062593401!5m2!1ses-419!2ses"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+		<h3 id="fin" style="color:#B4B7F7">Fin</h3>
+		<br>
+</fieldset>
+</body>
+<footer>
+<fieldset>
+		<p style="color:#7F36E9"><b>© 2024 María Laura Asuaje. <br>
+				Todos los derechos reservados. <br>
+				Campus Adams</b></p>
+</fieldset>
+</footer>
+
+</html>
